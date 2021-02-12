@@ -1,0 +1,9 @@
+.PHONY: all clean
+
+OUT=spout
+
+all:
+	gcc -m32 -o $(OUT) spout.c piece.c -lSDL
+
+clean:
+	rm -rf $(OUT)
